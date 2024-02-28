@@ -138,32 +138,3 @@ public class ClockFragment extends Fragment {
 }
 
 
-//    // Declaring a layout (changes are to be made to this)
-//    // Declaring a textview (which is inside the layout)
-//    SwipeRefreshLayout swipeRefreshLayout = v.findViewById(R.id.refreshLayout);
-////TextView refreshText = v.findViewById(R.id.tv1);
-//
-//
-//// Refresh  the layout
-//        swipeRefreshLayout.setOnRefreshListener(
-//                new SwipeRefreshLayout.OnRefreshListener() {
-//@Override
-//public void onRefresh() {
-//
-//        //get textview
-//        TextView julian = v.findViewById(R.id.jdate);
-//        //get day
-//        julian.setText(julian_day());
-//
-//        // Showing selected spinner item
-//        Toast.makeText(getContext(), "Refreshed", Toast.LENGTH_SHORT).show();
-//
-//        //refreshText.setText("Refreshed");
-//
-//        // This line is important as it explicitly
-//        // refreshes only once
-//        // If "true" it implicitly refreshes forever
-//        swipeRefreshLayout.setRefreshing(false);
-//        }
-//        }
-//        );
