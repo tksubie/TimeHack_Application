@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Bottom Navigation text and display -->
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_clock"
+        android:icon="@drawable/icon_home_clock"
+        android:title="@string/title_clock" />
+
+    <item
+        android:id="@+id/navigation_info"
+        android:icon="@drawable/icon_instruction_manuals"
+        android:title="@string/title_info" />
+
+    <item
+        android:id="@+id/navigation_notes"
+        android:icon="@drawable/icon_notes"
+        android:title="@string/title_notes" />
+
+</menu>

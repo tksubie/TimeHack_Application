@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for the clock screen -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#435943"
+    tools:context=".ui.clock.ClockActivity">
+
+
+    <!-- For julian date description -->
+
+    <!-- For current date/time description -->
+
+    <!-- For chosen time description -->
+
+    <!-- For time zone description -->
+
+    <!-- For Julian date formatting-->
+
+    <!-- For current time formatting -->
+
+    <TextView
+        android:id="@+id/current_values"
+        android:layout_width="386dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="monospace"
+        android:inputType="none"
+        android:text="@string/current_location_time_date"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.315"
+        tools:ignore="Autofill,LabelFor,MissingConstraints,TextContrastCheck,TouchTargetSizeCheck,VisualLintOverlap" />
+    <!-- For choosen time formatting -->
+    <!-- For time zone description -->
+
+    <TextView
+        android:id="@+id/time_zone"
+        android:layout_width="386dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="monospace"
+        android:inputType="none"
+        android:text="@string/time_zone_time"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.597"
+        tools:ignore="Autofill,LabelFor,MissingConstraints,TextContrastCheck,TouchTargetSizeCheck,VisualLintOverlap" />
+
+    <!-- Backer for ZULU time-->
+    <!-- Backer for julian date time-->
+
+    <!-- current time backer -->
+
+    <!--Image backer for current time -->
+
+    <TextView
+        android:id="@+id/text_clock"
+        android:layout_width="227dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="monospace"
+        android:inputType="none"
+        android:text="@string/gps_zulu_time"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068"
+        tools:ignore="Autofill,LabelFor,MissingConstraints,TextContrastCheck,TouchTargetSizeCheck,TextSizeCheck,VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/choose_time"
+        android:layout_width="386dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="monospace"
+        android:inputType="none"
+        android:text="@string/chosen_time_zone"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462"
+        tools:ignore="Autofill,LabelFor,MissingConstraints,TextContrastCheck,TouchTargetSizeCheck,VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/julian_date"
+        android:layout_width="186dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="monospace"
+        android:inputType="none"
+        android:text="@string/julian_date_mmdd"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.191"
+        tools:ignore="Autofill,LabelFor,MissingConstraints,TextContrastCheck,TextFields,TouchTargetSizeCheck,TextSizeCheck,VisualLintOverlap" />
+
+    <!--<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        &lt;!&ndash;TextView &ndash;&gt;
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            tools:layout_conversion_absoluteHeight="731dp"
+            tools:layout_conversion_absoluteWidth="411dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+    <ImageView
+        android:id="@+id/CurrentT_View"
+        android:layout_width="240dp"
+        android:layout_height="57dp"
+        android:contentDescription="@string/view_for_current_time_date"
+        android:src="@drawable/textbox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.364"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- Spinner for dropdown menu-->
+    <!--        android:entries="@array/Popular_Time_Zones"-->
+    <!--LOGO-->
+    <!-- ZULU time-->
+
+    <!-- Julian Date-->
+
+    <!-- Image backer for timezone time -->
+
+    <ImageView
+        android:id="@+id/currentT_View"
+        android:layout_width="240dp"
+        android:layout_height="57dp"
+        android:contentDescription="@string/view_for_current_time_date"
+        android:src="@drawable/textbox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.654"
+        tools:ignore="ImageContrastCheck" />
+
+    <Spinner
+        android:id="@+id/timeZone_spinner"
+        android:layout_width="231dp"
+        android:layout_height="39dp"
+        android:contentDescription="@string/time_zone_selector"
+        android:dropDownWidth="wrap_content"
+        android:entries="@array/Popular_Time_Zones"
+        android:fontFamily="monospace"
+        android:popupBackground="@android:drawable/spinner_background"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/color_secondary"
+        android:textSize="10sp"
+        android:theme="@android:style/Theme.DeviceDefault.Light.Panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.505"
+        tools:ignore="MissingConstraints,SmallSp,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/currentT_View2"
+        android:layout_width="240dp"
+        android:layout_height="57dp"
+        android:contentDescription="@string/view_for_current_time_date"
+        android:src="@drawable/textbox"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.504"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- current date/time-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="397dp"
+        android:layout_height="285dp"
+        android:contentDescription="@string/timehack_logo"
+        android:src="@drawable/timehack_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/Zulu_View"
+        android:layout_width="304dp"
+        android:layout_height="42dp"
+        android:contentDescription="@string/view_for_zulu_time"
+        android:src="@drawable/zulu_backer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextClock
+        android:id="@+id/zulu_time"
+        android:layout_width="133dp"
+        android:layout_height="47dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:format12Hour="k:mm:ss "
+        android:format24Hour="k:mm:ss "
+        android:gravity="center"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:timeZone="Zulu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.082"
+        tools:ignore="MissingConstraints,VisualLintOverlap" />
+
+    <ImageView
+        android:id="@+id/Julian_View"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/view_for_julian_date"
+        android:src="@drawable/julian_backer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/jdate"
+        android:layout_width="77dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:fontFamily="monospace"
+        android:inputType="none"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/current_values"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/julian_date"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints,VisualLintOverlap" />
+
+    <TextClock
+        android:id="@+id/cdateTime"
+        android:layout_width="285dp"
+        android:layout_height="49dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:format12Hour="h:mm a - dd/MM/yy"
+        android:format24Hour="k:mm - dd/MM/yy"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.359"
+        tools:ignore="MissingConstraints,VisualLintOverlap" />
+
+    <TextClock
+        android:id="@+id/tz_display"
+        android:layout_width="278dp"
+        android:layout_height="71dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:format12Hour="h:mm a - dd/MM/yy"
+        android:format24Hour="k:mm - dd/MM/yy"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.668"
+        tools:ignore="MissingConstraints,VisualLintBounds,VisualLintOverlap" />
+
+    <!--Swipe Refresh Layout -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

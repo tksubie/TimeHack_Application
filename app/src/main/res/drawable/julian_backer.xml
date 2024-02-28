@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- drawable/julian_backer.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="74dp"
+    android:height="47dp"
+    android:viewportWidth="74"
+    android:viewportHeight="47">
+    <group>
+        <clip-path
+            android:pathData="M13 0H61C68.1797 0 74 5.8203 74 13V34C74 41.1797 68.1797 47 61 47H13C5.8203 47 0 41.1797 0 34V13C0 5.8203 5.8203 0 13 0Z"
+            />
+        <path
+            android:pathData="M0 0V47H74V0"
+            android:fillColor="#57C0BDBD"
+            />
+    </group>
+</vector>

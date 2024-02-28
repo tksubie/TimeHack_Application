@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- drawable/zulu_time_h.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="283dp"
+    android:height="48dp"
+    android:viewportWidth="283"
+    android:viewportHeight="48"
+    tools:ignore="VectorRaster">
+        <group>
+            <clip-path
+                android:pathData="M13 0H270C277.18 0 283 5.8203 283 13V35C283 42.1797 277.18 48 270 48H13C5.8203 48 0 42.1797 0 35V13C0 5.8203 5.8203 0 13 0Z"
+                />
+            <path
+                android:pathData="M0 0V48H283V0"
+                android:fillColor="#57C0BDBD"
+                />
+        </group>
+    </vector>

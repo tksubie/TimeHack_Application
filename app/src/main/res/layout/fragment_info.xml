@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for the info screen -->
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#435943"
+    tools:context=".ui.info.InfoFragment">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="322dp"
+        android:layout_height="126dp"
+        android:background="@drawable/julian_backer"
+        android:clickable="true"
+        android:contentDescription="@string/quickhelp_pdf"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.128"
+        tools:ignore="MissingConstraints,TextSizeCheck,VisualLintButtonSize" />
+
+    <ImageView
+        android:id="@+id/pdfView1"
+        android:layout_width="62dp"
+        android:layout_height="64dp"
+        android:src="@drawable/pdf_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.157"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/pdf1"
+        android:layout_width="253dp"
+        android:layout_height="53dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="monospace"
+        android:text="@string/quickhelp_faqs"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168"
+        tools:ignore="SpUsage,TextSizeCheck,VisualLintButtonSize,VisualLintOverlap" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="322dp"
+        android:layout_height="126dp"
+        android:background="@drawable/julian_backer"
+        android:clickable="true"
+        android:contentDescription="@string/sincgars_tm_pdf"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385"
+        tools:ignore="MissingConstraints,TextSizeCheck,VisualLintButtonSize" />
+
+    <ImageView
+        android:id="@+id/pdfView2"
+        android:layout_width="62dp"
+        android:layout_height="64dp"
+        android:src="@drawable/pdf_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/pdf2"
+        android:layout_width="259dp"
+        android:layout_height="65dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="monospace"
+        android:text="@string/tm_11_5820_890_10_3_sincgars_operation_manual"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395"
+        tools:ignore="TextSizeCheck,VisualLintButtonSize,VisualLintOverlap,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="322dp"
+        android:layout_height="126dp"
+        android:background="@drawable/julian_backer"
+        android:clickable="true"
+        android:contentDescription="@string/sincgars_pocket_guide_tm_pdf"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648"
+        tools:ignore="MissingConstraints,TextSizeCheck,VisualLintButtonSize" />
+
+    <ImageView
+        android:id="@+id/pdfView3"
+        android:layout_width="62dp"
+        android:layout_height="64dp"
+        android:src="@drawable/pdf_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/pdf3"
+        android:layout_width="244dp"
+        android:layout_height="60dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="monospace"
+        android:text="@string/tm_11_5820_890_10_7_ncs_pocket_guide"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63"
+        tools:ignore="TextSizeCheck,VisualLintButtonSize,VisualLintOverlap" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="319dp"
+        android:layout_height="95dp"
+        android:clickable="false"
+        android:contextClickable="false"
+        android:fontFamily="monospace"
+        android:text="@string/click_above_for_info_help_in_the_form_of_a_pdf"
+        android:textAlignment="center"
+        android:textColor="#A8AEACAC"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.885"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

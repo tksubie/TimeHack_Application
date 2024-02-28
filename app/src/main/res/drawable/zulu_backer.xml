@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- drawable/zulu_backer.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="158dp"
+    android:height="47dp"
+    android:viewportWidth="158"
+    android:viewportHeight="47">
+<group>
+    <clip-path
+        android:pathData="M13 0H145C152.18 0 158 5.8203 158 13V34C158 41.1797 152.18 47 145 47H13C5.8203 47 0 41.1797 0 34V13C0 5.8203 5.8203 0 13 0Z"
+        />
+    <path
+        android:pathData="M0 0V47H158V0"
+        android:fillColor="#57C0BDBD"
+        />
+</group>
+</vector>
