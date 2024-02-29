@@ -158,6 +158,7 @@
         app:layout_constraintVertical_bias="0.59"
         tools:ignore="MissingConstraints,TextSizeCheck,VisualLintButtonSize" />
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="319dp"
