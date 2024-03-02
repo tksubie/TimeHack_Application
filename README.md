@@ -1,6 +1,6 @@
 # TimeHack
 
-<p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/8bf96251-a88c-4870-8ceb-174710ca9ae8" width="500"/>
+<p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/f4c68f73-b84d-4349-bd20-6d14a79bbf4b" width="500"/>
 
 ---
 ### TimeHack is an application that can be used to help Soldiers of the United States military and also users of a Single Channel Ground & Airbourne Radio System. This project will consist of making it easier for operators by having all the information necessary for operating SINCGARS equipment in one place to increase efficiency with the equipment and also aid in teaching how to use the equipment. All of the information will be packed into one application that will be able to be used offline to increase Operational Security (OPSEC) and will utilize the operating personnel’s cellular/mobile device for time and date purposes.
@@ -25,10 +25,9 @@ Headquarters, Dept. of the Army, SINCGARS ICOM ground radios used with Automated
 
 <p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/d2705493-31be-43fb-a0eb-8a7064065b9d" width="250"/>
 
-
 ## Info Help Page in Progress
 
-<p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/6c820be8-dc26-4e2b-8581-c131d5eb5f49"  width="250"/>
+<p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/8d685561-dd5f-4e48-a14b-dd6915358e1a"  width="250"/>
 
 ## Notes page in progress
 
