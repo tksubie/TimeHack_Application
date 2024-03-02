@@ -64,9 +64,9 @@ public class InfoFragment extends Fragment {
         String pdf3 = "SINCGARS Pocket Guide";
 
         //create file name for uri to find the file
-        String fileName1 = "QuickHelp_TimeHack.pdf";
+        String fileName1 = "QuickHelp_TM.pdf";
         String fileName2 = "TM_11-5820-890-10-3_TimeHack.pdf";
-        String fileName3 = "TM_11-5820-890-10-6_TimeHack.pdf";
+        String fileName3 = "TM_11-5820-890-10-6_Timehack.pdf";
 
         //set on click listener for all one by one
         button(v,pdf_button1, pdf1,fileName1);
@@ -89,7 +89,7 @@ public class InfoFragment extends Fragment {
      * v for view
      * y for button name
      * pdfName for pdf name in toast
-     * f for pdf file name
+     * f for pdf filepath
      */
 
     public void button(View x, Button y, String pdfName, String f) {

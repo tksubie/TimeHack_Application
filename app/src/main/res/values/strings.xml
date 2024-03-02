@@ -23,13 +23,16 @@
     <string name="j_date">date</string>
     <string name="swipe_to_refresh">Swipe to refresh</string>
     <string name="quickhelp_faqs">QuickHelp_FAQs</string>
-    <string name="tm_11_5820_890_10_3_sincgars_operation_manual">TM_11-5820-890-10-3 SINCGARS Operation TM</string>
-    <string name="tm_11_5820_890_10_7_ncs_pocket_guide">TM_11-5820-890-10-7 NCS Pocket Guide</string>
+    <string name="tm_11_5820_890_10_3_sincgars_operation_manual">TM_11-5820-890-10-3</string>
+    <string name="tm_11_5820_890_10_7_ncs_pocket_guide">TM_11-5820-890-10-6</string>
     <string name="click_above_for_info_help_in_the_form_of_a_pdf">*Click above for Info/Help in the form of a PDF</string>
     <string name="button">Button</string>
     <string name="quickhelp_pdf">Quickhelp pdf</string>
     <string name="sincgars_tm_pdf">SINCGARS TM pdf</string>
     <string name="sincgars_pocket_guide_tm_pdf">SINCGARS Pocket Guide TM pdf</string>
+    <string name="sincgars_operation_tm">SINCGARS Operation TM</string>
+    <string name="sincgars_pocket_guide">SINCGARS Pocket Guide</string>
+    <string name="header_icon_for_info_help">Header icon for info/help</string>
 
 
     <!-- strings for dropdown time zone -->
