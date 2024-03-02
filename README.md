@@ -1,4 +1,4 @@
-<img src="![image](https://github.com/tksubie/TimeHack_Application/assets/116237117/8bf96251-a88c-4870-8ceb-174710ca9ae8)" width="100" height="100"/>
+<img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/8bf96251-a88c-4870-8ceb-174710ca9ae8" width="100" height="100"/>
 Background
 
 TimeHack is an application that can be used to help Soldiers of the United States military and also users of a Single Channel Ground & Airbourne Radio System. 
@@ -16,16 +16,16 @@ The application consists of the following information in an easy to read and nav
 
 Home Page Completed
 
-<img src="![0](https://github.com/tksubie/TimeHack_Application/assets/116237117/d2705493-31be-43fb-a0eb-8a7064065b9d)" width="100" height="100"/>
+<img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/d2705493-31be-43fb-a0eb-8a7064065b9d" width="100" height="100"/>
 
 
 Info Help Page in Progress
 
-<img src="![0](https://github.com/tksubie/TimeHack_Application/assets/116237117/6c820be8-dc26-4e2b-8581-c131d5eb5f49)" width="100" height="100"/>
+<img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/6c820be8-dc26-4e2b-8581-c131d5eb5f49" width="100" height="100"/>
 
 Notes page in progress
 
-<img src="![0](https://github.com/tksubie/TimeHack_Application/assets/116237117/fe456373-9002-4471-b657-a11e3b9aed92)" width="100" height="100"/>
+<img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/fe456373-9002-4471-b657-a11e3b9aed92" width="100" height="100"/>
 
 
 
