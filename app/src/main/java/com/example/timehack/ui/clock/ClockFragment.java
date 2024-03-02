@@ -1,6 +1,7 @@
 package com.example.timehack.ui.clock;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,8 +33,6 @@ public class ClockFragment extends Fragment {
     //initialize the adapter
     ArrayAdapter<CharSequence> adapter;
 
-
-
     private FragmentClockBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -50,8 +49,6 @@ public class ClockFragment extends Fragment {
 
         final TextView textView = binding.textClock;
 
-        //set up text clock
-        TextClock tz = (TextClock) v.findViewById(R.id.tz_display);
 
         //creating spinner
         spinner = (Spinner) v.findViewById(R.id.timeZone_spinner);
@@ -62,35 +59,9 @@ public class ClockFragment extends Fragment {
                 R.array.Popular_Time_Zones,
                 android.R.layout.simple_spinner_item
         );
-        // Specify the layout to use when the list of choices appears.
-        adapter.setDropDownViewResource(android.R.layout.select_dialog_singlechoice);
 
-        // Apply the adapter to the spinner.
-        spinner.setAdapter(adapter);
-
-        //when clicking on an item in the spinner, do something
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                // An item is selected. You can retrieve the selected item using
-                // parent.getItemAtPosition(pos).
-                // On selecting a spinner item
-
-                String timezone_choice = spinner.getSelectedItem().toString();
-
-                // Showing selected spinner item
-                Toast.makeText(adapterView.getContext(), "TimeZone: " + timezone_choice, Toast.LENGTH_SHORT).show();
-
-                //set timezone
-                tz.setTimeZone(timezone_choice);
-
-            }
-
-            //when spinner item is not selected
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-            }
-        });
+        //set the spinner with adapter, spinner, and view
+        spinnerSet(adapter, spinner, v);
 
         //get textview
         TextView julian = v.findViewById(R.id.jdate);
@@ -107,6 +78,59 @@ public class ClockFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
+
+    /*
+    * create a spinner
+    * Variables in
+    * Char array adapter being adap
+    * Spinner being spin
+    * View for textclock being x
+    */
+    public void spinnerSet(ArrayAdapter<CharSequence> adap, Spinner spin, View x ) {
+        // Specify the layout to use when the list of choices appears.
+        adap.setDropDownViewResource(android.R.layout.select_dialog_singlechoice);
+
+        // Apply the adapter to the spinner.
+        spin.setAdapter(adap);
+
+        //when clicking on an item in the spinner, do something
+        spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            //set up text clock
+            TextClock tz = (TextClock) x.findViewById(R.id.tz_display);
+
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                // An item is selected. You can retrieve the selected item using
+                // parent.getItemAtPosition(pos).
+                // On selecting a spinner item
+
+                String timezone_choice = spin.getSelectedItem().toString();
+
+                // Showing selected spinner item
+                final Toast toast = Toast.makeText(adapterView.getContext(), "TimeZone: " + timezone_choice, Toast.LENGTH_SHORT);
+                toast.show();
+
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        toast.cancel();
+                    }
+                }, 750);
+
+                //set timezone
+                tz.setTimeZone(timezone_choice);
+
+            }
+
+            //when spinner item is not selected
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+            }
+        });
+    }
+
 
     //Get Julian day for setting text
     String julian_day(){
