@@ -14,6 +14,7 @@
 #### •	Quick sheet user guide to start up SINCGARS radio in single channel (SC) mode for operation.
 #### •	Notes section – for general information for the operator to be easy to obtain during operation.
 ---
+## Citations for Technical Manuals supplied in the application
 ### -TM_11-5820-890-10-3:
 Headquarters, Dept. of the Army, Operator’s manual: Sincgars Ground Combat Net Radio, non-ICOM: Manpack Radio, AN/PRC-119 (NSN 5820-01-151-9915) (EIC: L2a), short range vehicular radio, AN/VRC-87 (NSN 5820-01-151-9916) (EIC: L2T) ... long range/long range vehicular radio, AN/VRC-92 (NSN 5820-01-151-9921) (EIC: L2y) (1997). Washington, D.C.
 ### -TM_11-5820-890-10-6:
