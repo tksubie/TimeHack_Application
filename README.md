@@ -14,11 +14,11 @@
   <p>•	Quick sheet user guide to start up SINCGARS radio in single channel (SC) mode for operation.</p>
   <p>•	Notes section – for general information for the operator to be easy to obtain during operation.</p>
 ---
-## Citations for Technical Manuals supplied in the application
-# -TM_11-5820-890-10-3:
-Headquarters, Dept. of the Army, Operator’s manual: Sincgars Ground Combat Net Radio, non-ICOM: Manpack Radio, AN/PRC-119 (NSN 5820-01-151-9915) (EIC: L2a), short range vehicular radio, AN/VRC-87 (NSN 5820-01-151-9916) (EIC: L2T) ... long range/long range vehicular radio, AN/VRC-92 (NSN 5820-01-151-9921) (EIC: L2y) (1997). Washington, D.C.
-# -TM_11-5820-890-10-6:
-Headquarters, Dept. of the Army, SINCGARS ICOM ground radios used with Automated Net Control Device (ANCD) AN/CYZ-10: Operator’s pocket knife: Radio sets, Manpack Radio (AN/PRC-119A) ... (NSN N/A) (EIC n/A) (1994). Washington, D.C. 
+<p> Citations for Technical Manuals supplied in the application</p>
+<p> -TM_11-5820-890-10-3:</p>
+<p>Headquarters, Dept. of the Army, Operator’s manual: Sincgars Ground Combat Net Radio, non-ICOM: Manpack Radio, AN/PRC-119 (NSN 5820-01-151-9915) (EIC: L2a), short range vehicular radio, AN/VRC-87 (NSN 5820-01-151-9916) (EIC: L2T) ... long range/long range vehicular radio, AN/VRC-92 (NSN 5820-01-151-9921) (EIC: L2y) (1997). Washington, D.C.</p>
+<p> -TM_11-5820-890-10-6:</p>
+<p>Headquarters, Dept. of the Army, SINCGARS ICOM ground radios used with Automated Net Control Device (ANCD) AN/CYZ-10: Operator’s pocket knife: Radio sets, Manpack Radio (AN/PRC-119A) ... (NSN N/A) (EIC n/A) (1994). Washington, D.C. </p>
 
 ---
 ## Home Page Completed
