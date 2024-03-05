@@ -36,6 +36,7 @@ Headquarters, Dept. of the Army, SINCGARS ICOM ground radios used with Automated
 
 ---
 ### TimeHack Application made by tksubie
-###  Copyright 2024 Thaine Koen
+### Copyright 2024 Thaine Koen
+##  Developed using Android Studio
 
 
