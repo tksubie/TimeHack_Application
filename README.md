@@ -36,7 +36,7 @@
 
 ---
 ##  Developed using Android Studio
-# TimeHack Application made by tksubie
-# Copyright 2024 Thaine Koen
+#### TimeHack Application made by tksubie
+#### Copyright 2024 Thaine Koen
 
 
