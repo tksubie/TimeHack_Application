@@ -44,8 +44,8 @@ public class ClockFragment extends Fragment {
         //for the clock fragment view when it starts up
         View v = inflater.inflate(R.layout.fragment_clock, container, false);
 
-        //hide action bar
-        ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
+        //show action bar
+        ((AppCompatActivity) getActivity()).getSupportActionBar().show();
 
         final TextView textView = binding.textClock;
 

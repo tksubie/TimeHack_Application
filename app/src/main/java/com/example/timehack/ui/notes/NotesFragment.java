@@ -153,8 +153,6 @@ public class NotesFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        //hide action bar
-        ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
         binding = null;
     }
 

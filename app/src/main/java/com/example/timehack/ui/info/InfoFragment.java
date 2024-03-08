@@ -45,8 +45,8 @@ public class InfoFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        //hide action bar
-        ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
+        //show action bar
+        ((AppCompatActivity) getActivity()).getSupportActionBar().show();
 
         binding = FragmentInfoBinding.inflate(inflater, container, false);
 
