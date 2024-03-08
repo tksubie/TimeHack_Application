@@ -2,8 +2,6 @@ package com.example.timehack;
 
 
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -34,27 +32,11 @@ public class MainActivity extends AppCompatActivity{
         NavigationUI.setupWithNavController(binding.navView, navController);
 
 
+
+
+
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.actionbar, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here.
-        int id = item.getItemId();
-
-        if (id == R.id.action_settings) {
-            //process your onClick here
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }
 
 

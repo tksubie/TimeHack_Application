@@ -25,4 +25,9 @@
         android:name="com.example.timehack.ui.notes.NotesFragment"
         android:label="@string/title_notes"
         tools:layout="@layout/fragment_notes" />
+    <activity
+        android:id="@+id/navigation_notesEditor"
+        android:name="com.example.timehack.ui.notes.NotesTaker"
+        android:label="@string/title_notes"
+        tools:layout="@layout/fragment_notes" />
 </navigation>

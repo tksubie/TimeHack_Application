@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C3C2C2"
+    android:orientation="vertical"
+    tools:context=".ui.notes.NotesTaker">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/notes_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorGray"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="monospace"
+                android:text="@string/edit_view_note"
+                android:textAlignment="viewStart"
+                android:textSize="25sp"
+                android:textStyle="normal"
+                tools:ignore="TextSizeCheck" />
+
+            <ImageView
+                android:id="@+id/saveImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="12dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/save_button_to_save_a_note"
+                android:src="@drawable/baseline_save_alt_24"
+                tools:ignore="RedundantDescriptionCheck" />
+
+            <ImageView
+                android:id="@+id/backImage"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/back_button"
+                android:src="@drawable/baseline_arrow_back_24"
+                tools:ignore="RedundantDescriptionCheck" />
+
+            <ImageView
+                android:id="@+id/shareImage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignEnd="@id/textView2"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="65dp"
+                android:layout_marginRight="-55dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/share_button_to_share_a_note"
+                android:src="@drawable/baseline_share_24"
+                tools:ignore="RedundantDescriptionCheck,RtlHardcoded" />
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:autofillHints="This is where a title goes..."
+        android:fontFamily="monospace"
+        android:hint="Title"
+        android:padding="13dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#66000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText,TextFields,VisualLintTextFieldSize,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:fontFamily="monospace"
+        android:gravity="top|left"
+        android:hint="Note typed here... "
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="#66000000"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintBounds,VisualLintTextFieldSize" />
+
+
+</LinearLayout>

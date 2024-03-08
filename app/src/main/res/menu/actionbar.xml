@@ -3,11 +3,13 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         tools:context=".ui.notes.NotesActivity">
+
+        <!-- action button for addNote -->
         <item
-            android:id="@+id/action_settings"
+            android:id="@+id/addN"
             android:orderInCategory="100"
-            android:title="Button title"
-            android:icon="@drawable/timehack_logo"
-            app:showAsAction="never" />
+            android:title="@string/add_note"
+            android:visible="true"
+            app:showAsAction="ifRoom" />
 
 </menu>

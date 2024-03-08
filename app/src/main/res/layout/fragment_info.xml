@@ -11,63 +11,11 @@
     android:background="#435943"
     tools:context=".ui.info.InfoFragment">
 
-    <TextView
-        android:id="@+id/pdf3"
-        android:layout_width="261dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="8dp"
-        android:background="#00FFFFFF"
-        android:fontFamily="monospace"
-        android:text="@string/tm_11_5820_890_10_7_ncs_pocket_guide"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button3"
-        app:layout_constraintTop_toTopOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.666"
-        tools:ignore="TextSizeCheck,VisualLintButtonSize,VisualLintOverlap" />
-
-    <TextView
-        android:id="@+id/heading_pocket_guide"
-        android:layout_width="321dp"
-        android:layout_height="34dp"
-        android:layout_marginBottom="20dp"
-        android:text="@string/sincgars_pocket_guide"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="TextSizeCheck" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="321dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/zulu_backer"
-        android:clickable="true"
-        android:contentDescription="@string/sincgars_pocket_guide_tm_pdf"
-        android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599"
-        tools:ignore="MissingConstraints,TextSizeCheck,VisualLintButtonSize" />
 
     <ImageView
         android:id="@+id/pdfView3"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:layout_marginEnd="8dp"
         android:src="@drawable/pdf_icon"
         app:layout_constraintBottom_toBottomOf="@+id/button3"
@@ -75,14 +23,39 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/pdf3"
         app:layout_constraintTop_toTopOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.4"
+        app:layout_constraintVertical_bias="0.608"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
+    <ImageView
+        android:id="@+id/pdfView1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/pdf_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/button1"
+        app:layout_constraintEnd_toEndOf="@+id/button1"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/pdf1"
+        app:layout_constraintTop_toTopOf="@+id/button1"
+        app:layout_constraintVertical_bias="0.478"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/pdfView2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/pdf_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toEndOf="@+id/pdf2"
+        app:layout_constraintTop_toTopOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.434"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/pdf1"
-        android:layout_width="256dp"
-        android:layout_height="37dp"
+        android:layout_width="262dp"
+        android:layout_height="35dp"
         android:background="#00FFFFFF"
         android:fontFamily="monospace"
         android:text="@string/quickhelp_faqs"
@@ -96,90 +69,8 @@
         app:layout_constraintStart_toEndOf="@+id/button1"
         app:layout_constraintStart_toStartOf="@+id/button1"
         app:layout_constraintTop_toTopOf="@+id/button1"
-        app:layout_constraintVertical_bias="0.523"
+        app:layout_constraintVertical_bias="0.478"
         tools:ignore="SpUsage,TextSizeCheck,VisualLintButtonSize,VisualLintOverlap" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="321dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/zulu_backer"
-        android:clickable="true"
-        android:contentDescription="@string/quickhelp_pdf"
-        android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.237"
-        tools:ignore="MissingConstraints,TextSizeCheck,VisualLintButtonSize" />
-
-    <ImageView
-        android:id="@+id/pdfView1"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:src="@drawable/pdf_icon"
-        app:layout_constraintBottom_toBottomOf="@+id/button1"
-        app:layout_constraintEnd_toEndOf="@+id/button1"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toEndOf="@+id/pdf1"
-        app:layout_constraintTop_toTopOf="@+id/button1"
-        app:layout_constraintVertical_bias="0.6"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="321dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/zulu_backer"
-        android:clickable="true"
-        android:contentDescription="@string/sincgars_tm_pdf"
-        android:focusable="true"
-        android:foreground="?android:attr/selectableItemBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.423"
-        tools:ignore="MissingConstraints,TextSizeCheck,VisualLintButtonSize,VisualLintOverlap" />
-
-    <ImageView
-        android:id="@+id/pdfView2"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:src="@drawable/pdf_icon"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/pdf2"
-        app:layout_constraintTop_toTopOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.666"
-        tools:ignore="ContentDescription,ImageContrastCheck" />
-
-    <TextView
-        android:id="@+id/pdf2"
-        android:layout_width="266dp"
-        android:layout_height="41dp"
-        android:background="#00FFFFFF"
-        android:fontFamily="monospace"
-        android:text="@string/tm_11_5820_890_10_3_sincgars_operation_manual"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toTopOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.882"
-        tools:ignore="TextSizeCheck,VisualLintButtonSize,VisualLintOverlap,TextContrastCheck" />
 
     <TextView
         android:id="@+id/heading_operation"
@@ -196,6 +87,57 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/pdf2"
+        android:layout_width="262dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="monospace"
+        android:text="@string/tm_11_5820_890_10_3_sincgars_operation_manual"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.535"
+        tools:ignore="TextSizeCheck,VisualLintButtonSize,VisualLintOverlap,TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/heading_pocket_guide"
+        android:layout_width="321dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/sincgars_pocket_guide"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/pdf3"
+        android:layout_width="262dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="monospace"
+        android:text="@string/tm_11_5820_890_10_7_ncs_pocket_guide"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/button3"
+        tools:ignore="TextSizeCheck,VisualLintButtonSize,VisualLintOverlap" />
 
     <TextView
         android:id="@+id/textView"
@@ -219,18 +161,74 @@
         app:layout_constraintVertical_bias="0.92"
         tools:ignore="TextSizeCheck,TextContrastCheck" />
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="321dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/zulu_backer"
+        android:clickable="true"
+        android:contentDescription="@string/quickhelp_pdf"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224"
+        tools:ignore="MissingConstraints,TextSizeCheck,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="321dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/zulu_backer"
+        android:clickable="true"
+        android:contentDescription="@string/sincgars_tm_pdf"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423"
+        tools:ignore="MissingConstraints,TextSizeCheck,VisualLintButtonSize,VisualLintOverlap" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="321dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/zulu_backer"
+        android:clickable="true"
+        android:contentDescription="@string/sincgars_pocket_guide_tm_pdf"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.599"
+        tools:ignore="MissingConstraints,TextSizeCheck,VisualLintButtonSize" />
+
     <ImageView
         android:id="@+id/headerIcon"
-        android:layout_width="187dp"
-        android:layout_height="130dp"
+        android:layout_width="177dp"
+        android:layout_height="103dp"
+        android:contentDescription="@string/header_icon_for_info_help"
         android:src="@drawable/icons8_user_manual_100"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.034"
-        tools:ignore="ImageContrastCheck"
-        android:contentDescription="@string/header_icon_for_info_help" />
+        app:layout_constraintVertical_bias="0.063"
+        tools:ignore="ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,20 +1,60 @@
 package com.example.timehack.ui.notes;
 
-import android.os.Bundle;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
-import androidx.appcompat.app.AppCompatActivity;
+import java.io.Serializable;
 
-import com.example.timehack.R;
+@Entity(tableName = "Notes")
+public class NotesActivity implements Serializable {
 
-public class NotesActivity extends AppCompatActivity {
+    @PrimaryKey(autoGenerate = true)
+    int ID = 0;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notes);
+    @ColumnInfo(name = "title")
+    String title = "";
 
+    @ColumnInfo(name = "date")
+    String date = "";
 
+    @ColumnInfo(name = "body")
+    String body = "";
+
+    public int getID() {
+        return ID;
     }
 
+    public void setID(int ID) {
+        this.ID = ID;
+    }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public void setBody(String body) {
+        this.body = body;
+    }
 }
+
+
+
+
+
