@@ -22,19 +22,19 @@
 
 ---
 ## Home Page, Info Help Page, Notes page
-Home Page                  | Info Help Page           | Notes page 
-:-------------------------:|:-------------------------|:-------------------------:
-<p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/8823d5a9-ca9f-4652-b9ec-2367c5a54f49"  width="250"/>
-  | <p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/5b37539b-c7dc-4a40-afe4-666242f02303" width="250"/> | <p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/113b719e-f8de-4a10-89e8-96990f6b274c" width="250"/>
 
-
-
-
-<p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/8823d5a9-ca9f-4652-b9ec-2367c5a54f49"  width="250"/>
-
-<p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/5b37539b-c7dc-4a40-afe4-666242f02303" width="250"/>
-
-<p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/113b719e-f8de-4a10-89e8-96990f6b274c" width="250"/>
+<table>
+  <tr>
+     <td>Home Page</td>
+     <td>Info Help Page</td>
+     <td>Notes page</td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/Screenshot_1582745092.png" width=270 height=480></td>
+    <td><img src="screenshots/Screenshot_1582745125.png" width=270 height=480></td>
+    <td><img src="screenshots/Screenshot_1582745139.png" width=270 height=480></td>
+  </tr>
+ </table>
 
 
 ---
