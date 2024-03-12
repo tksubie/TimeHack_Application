@@ -21,11 +21,18 @@
 <p>Headquarters, Dept. of the Army, SINCGARS ICOM ground radios used with Automated Net Control Device (ANCD) AN/CYZ-10: Operator’s pocket knife: Radio sets, Manpack Radio (AN/PRC-119A) ... (NSN N/A) (EIC n/A) (1994). Washington, D.C. </p>
 
 ---
-## Home Page                                       Info Help Page                                Notes page
+## Home Page, Info Help Page, Notes page
+Home Page                  | Info Help Page           | Notes page 
+:-------------------------:|:-------------------------|:-------------------------:
+<p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/8823d5a9-ca9f-4652-b9ec-2367c5a54f49"  width="250"/>
+  | <p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/5b37539b-c7dc-4a40-afe4-666242f02303" width="250"/> | <p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/113b719e-f8de-4a10-89e8-96990f6b274c" width="250"/>
 
-<p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/5b37539b-c7dc-4a40-afe4-666242f02303" width="250"/>
+
+
 
 <p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/8823d5a9-ca9f-4652-b9ec-2367c5a54f49"  width="250"/>
+
+<p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/5b37539b-c7dc-4a40-afe4-666242f02303" width="250"/>
 
 <p align="center"><img src="https://github.com/tksubie/TimeHack_Application/assets/116237117/113b719e-f8de-4a10-89e8-96990f6b274c" width="250"/>
 
