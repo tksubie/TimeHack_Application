@@ -30,9 +30,9 @@
      <td>Notes page</td>
   </tr>
   <tr>
-    <td><img src="screenshots/HomeScreen.jpg" width=32%></td>
-    <td><img src="screenshots/InfoScreen.jpg" width="32%" ></td>
-    <td><img src="screenshots/NotesScreen.jpg" width="32%" ></td>
+    <td><img src="screenshots/HomeScreen.jpg" width=220></td>
+    <td><img src="screenshots/InfoScreen.jpg" width=220 ></td>
+    <td><img src="screenshots/NotesScreen.jpg" width=220 ></td>
   </tr>
  </table>
 
