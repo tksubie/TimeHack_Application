@@ -21,7 +21,7 @@
 <p>Headquarters, Dept. of the Army, SINCGARS ICOM ground radios used with Automated Net Control Device (ANCD) AN/CYZ-10: Operator’s pocket knife: Radio sets, Manpack Radio (AN/PRC-119A) ... (NSN N/A) (EIC n/A) (1994). Washington, D.C. </p>
 
 ---
-## Home Page, Info Help Page, Notes page
+## Screenshots of Application in Use
 
 <table>
   <tr>
@@ -30,9 +30,9 @@
      <td>Notes page</td>
   </tr>
   <tr>
-    <td><img src="screenshots/Screenshot_1582745092.png" width=270 height=480></td>
-    <td><img src="screenshots/Screenshot_1582745125.png" width=270 height=480></td>
-    <td><img src="screenshots/Screenshot_1582745139.png" width=270 height=480></td>
+    <td><img src="screenshots/HomeScreen.jpg" width=270 height=480></td>
+    <td><img src="screenshots/IfoScreen.jpg" width=270 height=480></td>
+    <td><img src="screenshots/NotesScreen.jpg" width=270 height=480></td>
   </tr>
  </table>
 
