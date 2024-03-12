@@ -25,14 +25,16 @@
 
 <table>
   <tr>
-     <td>Home Page</td>
-     <td>Info Help Page</td>
-     <td>Notes page</td>
+     <td>Home</td>
+     <td>Info/Help </td>
+     <td>Notes</td>
+     <td>Add Note</td>
   </tr>
   <tr>
     <td><img src="screenshots/HomeScreen.jpg" width=220></td>
     <td><img src="screenshots/InfoScreen.jpg" width=220 ></td>
     <td><img src="screenshots/NotesScreen.jpg" width=220 ></td>
+   <td><img src="screenshots/AddNotesScreen.jpg" width=220 ></td>
   </tr>
  </table>
 
