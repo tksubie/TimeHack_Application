@@ -23,6 +23,11 @@
 ---
 ## Screenshots of Application in Use
 
+
+img {
+    float: left;
+    object-fit: cover;
+}
 <table>
   <tr>
      <td>Home</td>
