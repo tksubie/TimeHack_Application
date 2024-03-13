@@ -31,10 +31,10 @@
      <td>Add Note</td>
   </tr>
   <tr>
-    <td><img src="screenshots/HomeScreen.jpg" width=270 height=480></td>
-    <td><img src="screenshots/InfoScreen.jpg" width=270 height=480 ></td>
-    <td><img src="screenshots/NotesScreen.jpg" width=270 height=480 ></td>
-   <td><img src="screenshots/AddNotesScreen.jpg" width=270 height=480 ></td>
+    <td><img src="screenshots/HomeScreen.jpg" width="25%"></td>
+    <td><img src="screenshots/InfoScreen.jpg" width="25%" ></td>
+    <td><img src="screenshots/NotesScreen.jpg" width="25%" ></td>
+   <td><img src="screenshots/AddNotesScreen.jpg" width="25%" ></td>
   </tr>
  </table>
 
