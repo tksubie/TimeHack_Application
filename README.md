@@ -24,10 +24,7 @@
 ## Screenshots of Application in Use
 
 
-img {
-    float: left;
-    object-fit: cover;
-}
+
 <table>
   <tr>
      <td>Home</td>
@@ -36,7 +33,7 @@ img {
      <td>Add Note</td>
   </tr>
   <tr>
-    <td><img src="screenshots/HomeScreen.jpg" width:100%; height:auto></td>
+    <td><img src="screenshots/HomeScreen.jpg" width:100%; height:100%></td>
     <td><img src="screenshots/InfoScreen.jpg" width:100%; height:auto></td>
     <td><img src="screenshots/NotesScreen.jpg" width:100%; height:auto></td>
    <td><img src="screenshots/AddNotesScreen.jpg" width:100%; height:auto></td>
