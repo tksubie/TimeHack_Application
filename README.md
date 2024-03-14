@@ -36,9 +36,9 @@
   </tr>
   <tr>
     <td><img src="screenshots/HomeScreen.jpg" width=100% height=50%></td>
-    <td><img src="screenshots/InfoScreen.jpg" width=100% height="500px"></td>
-    <td><img src="screenshots/NotesScreen.jpg" width=100% height="500px"></td>
-   <td><img src="screenshots/AddNotesScreen.jpg" width=100% height="500px"></td>
+    <td><img src="screenshots/InfoScreen.jpg" width=100% height=50%></td>
+    <td><img src="screenshots/NotesScreen.jpg" width=100% height=50%></td>
+   <td><img src="screenshots/AddNotesScreen.jpg" width=100% height=50%></td>
   </tr>
  </table>
 
