@@ -12,7 +12,8 @@
   <p>•	TM_11-5820-890-10-3 SINCGARS operator’s Manual (Approved for public release)</p>
   <p>•	TM_11-5820-890-10-6 Pocket Guide SINCGARS ICOM Ground Radios (Approved for public release)</p>
   <p>•	Quick sheet user guide to start up SINCGARS radio in single channel (SC) mode for operation.</p>
-  <p>•	Notes section – for general information for the operator to be easy to obtain during operation. Also makes for an easy 1 stop place for all Military notes in one application.</p>
+  <p>•	Notes section – for general information for the operator to be easy to obtain during operation. Also makes for an easy 1 stop place for all Military notes in one application.
+            - Notes can be shared, edited, deleted, and added.</p>
 ---
 <p> Citations for Technical Manuals supplied in the application</p>
 <p> -TM_11-5820-890-10-3:</p>
