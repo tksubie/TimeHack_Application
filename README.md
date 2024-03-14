@@ -34,9 +34,9 @@
    <td>Info/Help</td>
   </tr>
   <tr>
-   <td><img src="screenshots/Home.jpg" width=100% height=100%></td>
-   <td><img src="screenshots/ChooseTZ.jpg" width=100% height=100%></td>
-   <td><img src="screenshots/Info.jpg" width=100% height=100%></td>
+   <td><img src="screenshots/Home.jpg" width=auto height=550px></td>
+   <td><img src="screenshots/ChooseTZ.jpg" width=auto height=550px></td>
+   <td><img src="screenshots/Info.jpg" width=auto height=550px></td>
   </tr>
  </table>
  
@@ -47,9 +47,9 @@
    <td>Edit Note</td>
   </tr>
   <tr>
-   <td><img src="screenshots/Notes.jpg" width=100% height=100%></td>
-   <td><img src="screenshots/AddNote.jpg" width=100% height=100%></td>
-   <td><img src="screenshots/EditNote.jpg" width=100% height=100%></td>
+   <td><img src="screenshots/Notes.jpg" width=auto height=550px></td>
+   <td><img src="screenshots/AddNote.jpg" width=auto height=550px></td>
+   <td><img src="screenshots/EditNote.jpg" width=auto height=550px></td>
   </tr>
  </table>
 
