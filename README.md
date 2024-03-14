@@ -37,12 +37,12 @@
    <td>Edit Note</td>
   </tr>
   <tr>
-   <td><img src="screenshots/Home.jpg" width=100% height="400px"></td>
-   <td><img src="screenshots/ChooseTZ.jpg" width=100% height="400px"></td>
-   <td><img src="screenshots/Info.jpg" width=100% height="400px"></td>
-   <td><img src="screenshots/Notes.jpg" width=100% height="400px"></td>
-   <td><img src="screenshots/AddNote.jpg" width=100% height="400px"></td>
-   <td><img src="screenshots/EditNote.jpg" width=100% height="400px"></td>
+   <td><img src="screenshots/Home.jpg" width=100% height="380px"></td>
+   <td><img src="screenshots/ChooseTZ.jpg" width=100% height="380px"></td>
+   <td><img src="screenshots/Info.jpg" width=100% height="380px"></td>
+   <td><img src="screenshots/Notes.jpg" width=100% height="380px"></td>
+   <td><img src="screenshots/AddNote.jpg" width=100% height="380px"></td>
+   <td><img src="screenshots/EditNote.jpg" width=100% height="380px"></td>
   </tr>
  </table>
 
