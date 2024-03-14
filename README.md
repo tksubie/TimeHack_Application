@@ -33,10 +33,10 @@
      <td>Add Note</td>
   </tr>
   <tr>
-    <td><img src="screenshots/HomeScreen.jpg" display: block; margin: 2vw; width: 10vw; height: 10vw;></td>
-    <td><img src="screenshots/InfoScreen.jpg" display: block; margin: 2vw; width: 10vw; height: 10vw;></td>
-    <td><img src="screenshots/NotesScreen.jpg" display: block; margin: 2vw; width: 10vw; height: 10vw;></td>
-   <td><img src="screenshots/AddNotesScreen.jpg" display: block; margin: 2vw; width: 10vw; height: 10vw;></td>
+    <td><img src="screenshots/HomeScreen.jpg" width=100% height="550px"></td>
+    <td><img src="screenshots/InfoScreen.jpg" width=100% height="550px"></td>
+    <td><img src="screenshots/NotesScreen.jpg" width=100% height="550px"></td>
+   <td><img src="screenshots/AddNotesScreen.jpg" width=100% height="550px"></td>
   </tr>
  </table>
 
