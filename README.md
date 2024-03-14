@@ -29,16 +29,20 @@
 
 <table>
   <tr>
-     <td>Home</td>
-     <td>Info/Help </td>
-     <td>Notes</td>
-     <td>Add Note</td>
+   <td>Home</td>
+   <td>Choose Timezone</td>
+   <td>Info/Help</td>
+   <td>Notes</td>
+   <td>Add Note</td>
+   <td>Edit Note</td>
   </tr>
   <tr>
-    <td><img src="screenshots/HomeScreen.jpg" width=100% height="400px"></td>
-    <td><img src="screenshots/InfoScreen.jpg" width=100% height="400px"></td>
-    <td><img src="screenshots/NotesScreen.jpg" width=100% height="400px"></td>
-   <td><img src="screenshots/AddNotesScreen.jpg" width=100% height="400px"></td>
+   <td><img src="screenshots/Home.jpg" width=100% height="400px"></td>
+   <td><img src="screenshots/ChooseTZ.jpg" width=100% height="400px"></td>
+   <td><img src="screenshots/Info.jpg" width=100% height="400px"></td>
+   <td><img src="screenshots/Notes.jpg" width=100% height="400px"></td>
+   <td><img src="screenshots/AddNote.jpg" width=100% height="400px"></td>
+   <td><img src="screenshots/EditNote.jpg" width=100% height="400px"></td>
   </tr>
  </table>
 
