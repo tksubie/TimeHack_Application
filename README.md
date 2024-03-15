@@ -38,20 +38,22 @@
    <td><img src="Screenshots/ChooseTZ.jpg" width=auto height=550px></td>
    <td><img src="Screenshots/Info.jpg" width=auto height=550px></td>
   </tr>
- </table>
- 
- <table>
   <tr>
    <td>Notes</td>
    <td>Add Note</td>
    <td>Edit Note</td>
-   <td>Search Notes</td>
   </tr>
   <tr>
    <td><img src="Screenshots/Notes.jpg" width=auto height=550px></td>
    <td><img src="Screenshots/AddNote.jpg" width=auto height=550px></td>
    <td><img src="Screenshots/EditNote.jpg" width=auto height=550px></td>
-   <td><img src="Screenshots/SearchNotes.jpg" width=auto height=550px></td>
+  </tr>
+ 
+ <tr>
+   <td>Search Notes</td>
+ </tr>
+  <tr>
+    <td><img src="Screenshots/SearchNotes.jpg" width=auto height=550px></td>
   </tr>
  </table>
 
