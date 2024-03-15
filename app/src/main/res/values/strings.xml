@@ -1,14 +1,14 @@
 <!-- Strings for different aspects in the application -->
 <resources>
     <string name="app_name">TimeHack</string>
-    <string name="title_clock">Time</string>
+    <string name="title_clock">TimeHack Dash</string>
     <string name="title_info">Info/Help</string>
     <string name="title_notes">Notes</string>
     <string name="todo">TODO</string>
     <string name="splash_screen">Made by a fellow SM for your use.</string>
-    <string name="time_zone_time">TimeZone Time</string>
-    <string name="chosen_time_zone">TimeZone Selector</string>
-    <string name="current_location_time_date">Current Time &amp; Military Date</string>
+    <string name="time_zone_time">Time Zone Time</string>
+    <string name="chosen_time_zone">Time Zone Selector</string>
+    <string name="current_location_time_date">Local Time &amp; Date</string>
     <string name="julian_date_mmdd">Julian Day DD</string>
     <string name="gps_zulu_time">Zulu Time (+/- 4 sec)</string>
     <string name="view_for_time_zone_time">view_for_time_zone_time</string>
@@ -25,7 +25,6 @@
     <string name="quickhelp_faqs">QuickHelp_FAQs</string>
     <string name="tm_11_5820_890_10_3_sincgars_operation_manual">TM_11-5820-890-10-3</string>
     <string name="tm_11_5820_890_10_7_ncs_pocket_guide">TM_11-5820-890-10-6</string>
-    <string name="click_above_for_info_help_in_the_form_of_a_pdf">*Click above for Info/Help in the form of a PDF</string>
     <string name="button">Button</string>
     <string name="quickhelp_pdf">Quickhelp pdf</string>
     <string name="sincgars_tm_pdf">SINCGARS TM pdf</string>
@@ -73,8 +72,7 @@
     </string-array>
     <string name="title_activity_notes_taker">notesTaker</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
@@ -86,6 +84,11 @@
     <string name="edit_view_note">Edit/View</string>
     <string name="share_button_to_share_a_note">share button to share a note</string>
     <string name="logo_for_notes_page">logo for notes page</string>
+    <string name="to_search_for_other_needed_technical_manuals_on_the_army_publishing_directorate">To obtain other needed Info/Help, try your web browser.</string>
+    <string name="click_here">Click for Web Browser</string>
+    <string name="search_your_notes_here">Search your notes here...</string>
+    <string name="click_to_edit_long_click_for_delete_or_share">Click to Edit, Long Click for Delete or Share.</string>
+    <string name="swipe_down_to_refresh_for_accurate_julian_day">Swipe down to refresh for accurate Julian Day</string>
 
 </resources>
 

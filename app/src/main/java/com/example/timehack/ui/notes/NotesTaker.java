@@ -22,6 +22,7 @@ public class NotesTaker extends AppCompatActivity {
     ImageView saveImage, shareImage, backButton;
     NotesActivity notes;
 
+
     //for notes in two instances
     boolean alreadyNotes = false;
 
@@ -52,17 +53,22 @@ public class NotesTaker extends AppCompatActivity {
         }
 
 
+        //when adding note make sure the body and title fields are filled in when clicking on save
         saveImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String title = editTitle.getText().toString();
                 String body = editBody.getText().toString();
 
+                if(title.isEmpty()){
+                    Toast.makeText(NotesTaker.this, "Enter Title before finishing.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 if(body.isEmpty()){
                     Toast.makeText(NotesTaker.this, "Enter notes before finishing.", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                @SuppressLint("SimpleDateFormat") SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yy hh:mm a");
+                @SuppressLint("SimpleDateFormat") SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yy HH:mm");
                 Date date = new Date();
 
                 if(!alreadyNotes){
@@ -73,7 +79,10 @@ public class NotesTaker extends AppCompatActivity {
 
                 notes.setTitle(title);
                 notes.setBody(body);
+                notes.setLastModified(date);
                 notes.setDate(formatter.format(date));
+
+
 
                 Intent intent = new Intent();
                 intent.putExtra("note", notes);
@@ -84,6 +93,25 @@ public class NotesTaker extends AppCompatActivity {
             }
         });
 
+        //on click for the share button, pulling up an intent and passing the title and body into the intent
+        shareImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String title = editTitle.getText().toString();
+                String body = editBody.getText().toString();
+
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "* Note from TimeHack Application * \nTitle: " + title + "\n" + body);
+                sendIntent.setType("text/plain");
+
+                Intent shareIntent = Intent.createChooser(sendIntent, null);
+                startActivity(shareIntent);
+
+            }
+        });
+
         //set back button to work in note editor/viewer screen
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,8 +119,6 @@ public class NotesTaker extends AppCompatActivity {
                     finish();
             }
         });
-
-
 
 
 

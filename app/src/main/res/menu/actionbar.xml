@@ -9,7 +9,8 @@
             android:id="@+id/addN"
             android:orderInCategory="100"
             android:title="@string/add_note"
-            android:visible="true"
-            app:showAsAction="ifRoom" />
+            android:icon="@drawable/baseline_note_add_white_75"
+            app:showAsAction="always"
+            />
 
 </menu>

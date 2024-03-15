@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'com.example.timehack'
-    compileSdk 33
+    compileSdk 34
 
     defaultConfig {
         applicationId "com.example.timehack"
         minSdk 23
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
@@ -52,6 +52,8 @@ dependencies {
     //for offline note storage
     implementation 'androidx.room:room-runtime:2.4.0'
     annotationProcessor 'androidx.room:room-compiler:2.4.0'
+    //for swipe to refresh
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
     
 
 }

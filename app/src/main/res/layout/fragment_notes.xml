@@ -17,10 +17,39 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
         android:contentDescription="@string/logo_for_notes_page"
-        app:srcCompat="@drawable/timehack_logo" />
+        app:srcCompat="@drawable/timehack_logo"
+        tools:ignore="ImageContrastCheck" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="397dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="@string/click_to_edit_long_click_for_delete_or_share"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:paddingBottom="9dp"
+        tools:ignore="SpUsage,TextContrastCheck,TextSizeCheck,VisualLintOverlap" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchNotes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/textbox"
+        android:clickable="true"
+        android:focusable="true"
+        android:hint="@string/search_your_notes_here"
+        app:queryHint="Search your notes here..." />
 
     <!--list view for notes displayed -->
 
@@ -28,8 +57,13 @@
         android:id="@+id/recycler_notes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="8dp"
+        android:layout_below="@id/searchNotes"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         >
+
     </androidx.recyclerview.widget.RecyclerView>
 
 </RelativeLayout>

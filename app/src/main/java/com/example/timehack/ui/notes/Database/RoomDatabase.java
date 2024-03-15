@@ -4,10 +4,13 @@ import android.content.Context;
 
 import androidx.room.Database;
 import androidx.room.Room;
+import androidx.room.TypeConverters;
 
 import com.example.timehack.ui.notes.NotesActivity;
 
-@Database(entities = NotesActivity.class, version = 1, exportSchema = false)
+//Database version and settings/creation
+@Database(entities = NotesActivity.class, version = 2, exportSchema = false)
+@TypeConverters({Converters.class})
 public abstract class RoomDatabase extends androidx.room.RoomDatabase {
 
     private static RoomDatabase roomDatabase;

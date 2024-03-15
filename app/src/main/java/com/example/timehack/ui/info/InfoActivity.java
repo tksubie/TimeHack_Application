@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.timehack.R;
 
+//activity for the info page setting the on create showing the fragment_info view
 public class InfoActivity extends AppCompatActivity {
 
     @Override

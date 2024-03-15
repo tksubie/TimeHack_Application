@@ -1,31 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.notes.NotesActivity">
 
-    <!-- action button for edit -->
-    <item android:title="@string/edit_note"
-        android:id="@+id/editN"
-        android:orderInCategory="100"
-        android:visible="true"
-        app:showAsAction="ifRoom"
-        />
 
-    <!-- action button for delete -->
+    <!--button for delete -->
     <item android:title="@string/delete_note"
         android:id="@+id/deleteN"
-        android:orderInCategory="100"
-        android:visible="true"
-        app:showAsAction="ifRoom"
         />
 
-    <!-- action button for share -->
+    <!--button for share -->
     <item android:title="@string/share_note"
         android:id="@+id/shareN"
-        android:orderInCategory="100"
-        android:visible="true"
-        app:showAsAction="ifRoom"
         />
 
 </menu>

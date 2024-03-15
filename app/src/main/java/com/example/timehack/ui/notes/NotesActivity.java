@@ -5,7 +5,9 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
+import java.util.Date;
 
+//create the table layout of the database and have all of the table values that are needed
 @Entity(tableName = "Notes")
 public class NotesActivity implements Serializable {
 
@@ -20,6 +22,18 @@ public class NotesActivity implements Serializable {
 
     @ColumnInfo(name = "body")
     String body = "";
+
+    @ColumnInfo(name = "lastModified")
+    Date lastModified;
+
+    //getter and setters below for all of the table values
+    public Date getLastModified() {
+        return lastModified;
+    }
+
+    public void setLastModified(Date lastModified) {
+        this.lastModified = lastModified;
+    }
 
     public int getID() {
         return ID;
@@ -53,7 +67,6 @@ public class NotesActivity implements Serializable {
         this.body = body;
     }
 }
-
 
 
 

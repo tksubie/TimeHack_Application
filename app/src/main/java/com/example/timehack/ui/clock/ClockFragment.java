@@ -15,6 +15,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.timehack.R;
 import com.example.timehack.databinding.FragmentClockBinding;
@@ -34,6 +35,7 @@ public class ClockFragment extends Fragment {
     ArrayAdapter<CharSequence> adapter;
 
     private FragmentClockBinding binding;
+    private SwipeRefreshLayout mSwipeRefreshLayout;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -45,7 +47,8 @@ public class ClockFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_clock, container, false);
 
         //show action bar
-        ((AppCompatActivity) getActivity()).getSupportActionBar().show();
+        ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
+
 
         final TextView textView = binding.textClock;
 
@@ -65,6 +68,31 @@ public class ClockFragment extends Fragment {
 
         //get textview
         TextView julian = v.findViewById(R.id.jdate);
+
+
+        //create a swipe down to refresh action
+        mSwipeRefreshLayout = (SwipeRefreshLayout) v.findViewById(R.id.refresh);
+        mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                //get day refreshed
+                julian.setText(julian_day());
+                // Showing refresh
+                final Toast toast = Toast.makeText(getContext(), "Refreshed Julian Day", Toast.LENGTH_SHORT);
+                toast.show();
+
+                //show the toast in less time than the default Short
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        toast.cancel();
+                    }
+                }, 750);
+                mSwipeRefreshLayout.setRefreshing(false);
+
+            }
+        });
 
         //get day
         julian.setText(julian_day());
@@ -131,7 +159,6 @@ public class ClockFragment extends Fragment {
         });
     }
 
-
     //Get Julian day for setting text
     String julian_day(){
         DateTime dt = new DateTime();
@@ -147,6 +174,7 @@ public class ClockFragment extends Fragment {
         //so when it is day 101 we want 01 as the output
         if (len >= 3){
             jday = jday.substring(1);
+
             return jday;
         }
         else{

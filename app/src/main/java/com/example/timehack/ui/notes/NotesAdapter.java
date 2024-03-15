@@ -1,5 +1,6 @@
 package com.example.timehack.ui.notes;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +16,8 @@ import com.example.timehack.R;
 
 import java.util.List;
 
+//notes adapter that links to the database values and makes it possible to query from the database
+//also extends the recyclerview view-holder so that the notes can be seen in the recyclerview
 public class NotesAdapter extends RecyclerView.Adapter<NotesViewHolder>{
 
     Context context;
@@ -26,6 +29,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesViewHolder>{
         this.list = list;
         this.listener = listener;
     }
+
 
     @NonNull
     @Override
@@ -63,6 +67,15 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesViewHolder>{
     @Override
     public int getItemCount() {
         return list.size();
+    }
+
+
+
+    //for search view
+    @SuppressLint("NotifyDataSetChanged")
+    public void filterList(List<NotesActivity> filteredList){
+        list = filteredList;
+        notifyDataSetChanged();
     }
 }
 

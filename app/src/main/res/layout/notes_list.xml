@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/notes_list_container"
     android:layout_width="wrap_content"
-    android:layout_height="110dp"
-    android:layout_marginTop="3dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
     android:dividerHeight="5dp"
-    app:cardBackgroundColor="#FFFFFF"
+    app:cardBackgroundColor="#EEFFFFFF"
     app:cardCornerRadius="15dp"
     app:contentPadding="3dp"
     tools:ignore="TextSizeCheck">
@@ -26,12 +26,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:fontFamily="monospace"
-                android:padding="8dp"
+                android:layout_marginStart="2dp"
+                android:padding="1dp"
                 android:singleLine="true"
                 android:text="@string/title"
                 android:textColor="@color/black"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 tools:ignore="TextContrastCheck" />
 
@@ -40,7 +40,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_alignParentEnd="true"
-                android:src="@drawable/baseline_menu_24"
+                android:src="@drawable/baseline_arrow_drop_down_24"
                 tools:ignore="ContentDescription,ImageContrastCheck" />
 
         </RelativeLayout>
@@ -49,10 +49,9 @@
             android:id="@+id/notesBody"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="monospace"
-            android:padding="8dp"
-            android:scrollHorizontally="true"
-            android:singleLine="true"
+            android:layout_marginStart="2dp"
+            android:maxLines="3"
+            android:padding="1dp"
             android:text="@string/note"
             android:textColor="@color/black"
             android:textSize="14sp"
@@ -63,18 +62,15 @@
             android:id="@+id/notesDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ellipsize="marquee"
-            android:fontFamily="monospace"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:maxLines="10"
-            android:padding="4dp"
-            android:scrollHorizontally="true"
+            android:textAlignment="textEnd"
+            android:paddingStart="0dp"
+            android:paddingEnd="5dp"
             android:singleLine="true"
             android:text="@string/date"
             android:textColor="@color/black"
-            android:textSize="14sp"
-            android:textStyle="normal"
-            tools:ignore="TextContrastCheck" />
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp,TextContrastCheck" />
 
     </LinearLayout>
 

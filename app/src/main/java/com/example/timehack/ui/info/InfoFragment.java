@@ -32,7 +32,7 @@ public class InfoFragment extends Fragment {
 
 
     //initialize the buttons
-    Button pdf_button1, pdf_button2, pdf_button3;
+    Button pdf_button1, pdf_button2, pdf_button3, clickable;
 
     //initialize the adapter
     ArrayAdapter<CharSequence> adapter;
@@ -46,7 +46,7 @@ public class InfoFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         //show action bar
-        ((AppCompatActivity) getActivity()).getSupportActionBar().show();
+        ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
 
         binding = FragmentInfoBinding.inflate(inflater, container, false);
 
@@ -58,13 +58,28 @@ public class InfoFragment extends Fragment {
         pdf_button2 = v.findViewById(R.id.button2);
         pdf_button3 = v.findViewById(R.id.button3);
 
+        clickable = v.findViewById(R.id.websiteClick);
+
+
         //set pdf names
         String pdf1 = "QuickHelp_FAQs";
         String pdf2 = "SINCGARS Operation TM";
         String pdf3 = "SINCGARS Pocket Guide";
 
+        /*
+        Citations for Technical Manuals supplied in the application
+        -TM_11-5820-890-10-3:
+        Headquarters, Dept. of the Army, Operator’s manual: Sincgars Ground Combat Net Radio,
+        non-ICOM: Manpack Radio, AN/PRC-119 (NSN 5820-01-151-9915) (EIC: L2a), short range vehicular
+        radio, AN/VRC-87 (NSN 5820-01-151-9916) (EIC: L2T) ... long range/long range vehicular radio,
+        AN/VRC-92 (NSN 5820-01-151-9921) (EIC: L2y) (1997). Washington, D.C.
+        -TM_11-5820-890-10-6:
+        Headquarters, Dept. of the Army, SINCGARS ICOM ground radios used with Automated Net Control
+         Device (ANCD) AN/CYZ-10: Operator’s pocket knife: Radio sets, Manpack Radio (AN/PRC-119A)
+         ... (NSN N/A) (EIC n/A) (1994). Washington, D.C.
+         */
         //create file name for uri to find the file
-        String fileName1 = "QuickHelp_TM.pdf";
+        String fileName1 = "QuickHelp_TM_V1.pdf";
         String fileName2 = "TM_11-5820-890-10-3_TimeHack.pdf";
         String fileName3 = "TM_11-5820-890-10-6_Timehack.pdf";
 
@@ -72,6 +87,19 @@ public class InfoFragment extends Fragment {
         button(v,pdf_button1, pdf1,fileName1);
         button(v,pdf_button2, pdf2, fileName2);
         button(v,pdf_button3, pdf3, fileName3);
+
+        clickable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com"));
+
+
+                String title = "Go to site with:";
+
+                Intent chooser = Intent.createChooser(intent, title);
+                startActivity(chooser);
+            }
+        });
 
         //return view
         return v;
