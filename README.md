@@ -35,8 +35,8 @@
   </tr>
   <tr>
    <td><img src="Screenshots/Home.jpg" width=auto height=auto></td>
-   <td><img src="Screenshots/ChooseTZ.jpg" width=auto height=auto></td>
-   <td><img src="Screenshots/Info.jpg" width=auto height=auto></td>
+   <td><img src="Screenshots/TimeZoneSelector.jpg" width=auto height=auto></td>
+   <td><img src="Screenshots/InfoPage.jpg" width=auto height=auto></td>
   </tr>
   <tr>
    <td>Notes</td>
@@ -44,7 +44,7 @@
    <td>Edit Note</td>
   </tr>
   <tr>
-   <td><img src="Screenshots/Notes.jpg" width=auto height=auto></td>
+   <td><img src="Screenshots/NotesPage.jpg" width=auto height=auto></td>
    <td><img src="Screenshots/AddNote.jpg" width=auto height=auto></td>
    <td><img src="Screenshots/EditNote.jpg" width=auto height=auto></td>
   </tr>
@@ -53,7 +53,7 @@
    <td>Search Notes</td>
  </tr>
   <tr>
-    <td><img src="Screenshots/SearchNotes.jpg" width=auto height=auto></td>
+    <td><img src="Screenshots/SearchNote.jpg" width=auto height=auto></td>
   </tr>
  </table>
 
