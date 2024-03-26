@@ -34,9 +34,9 @@
    <td>Info/Help</td>
   </tr>
   <tr>
-   <td><img src="Screenshots/Home.jpg" width=auto height=auto></td>
-   <td><img src="Screenshots/TimeZoneSelector.jpg" width=auto height=auto></td>
-   <td><img src="Screenshots/InfoPage.jpg" width=auto height=auto></td>
+   <td><img src="Screenshots/Home.png" width=auto height=auto></td>
+   <td><img src="Screenshots/TimeZoneSelector.png" width=auto height=auto></td>
+   <td><img src="Screenshots/InfoPage.png" width=auto height=auto></td>
   </tr>
   <tr>
    <td>Notes</td>
@@ -44,16 +44,16 @@
    <td>Edit Note</td>
   </tr>
   <tr>
-   <td><img src="Screenshots/NotesPage.jpg" width=auto height=auto></td>
-   <td><img src="Screenshots/AddNote.jpg" width=auto height=auto></td>
-   <td><img src="Screenshots/EditNote.jpg" width=auto height=auto></td>
+   <td><img src="Screenshots/NotesPage.png" width=auto height=auto></td>
+   <td><img src="Screenshots/AddNote.png" width=auto height=auto></td>
+   <td><img src="Screenshots/EditNote.png" width=auto height=auto></td>
   </tr>
  
  <tr>
    <td>Search Notes</td>
  </tr>
   <tr>
-    <td><img src="Screenshots/SearchNote.jpg" width=auto height=auto></td>
+    <td><img src="Screenshots/SearchNote.png" width=auto height=auto></td>
   </tr>
  </table>
 
