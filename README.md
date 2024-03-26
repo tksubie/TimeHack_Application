@@ -35,7 +35,7 @@
   </tr>
   <tr>
    <td><img src="Screenshots/Home.png" width=auto height=auto></td>
-   <td><img src="Screenshots/TimeZoneSelector.png" width=auto height=auto></td>
+   <td><img src="Screenshots/TimeZoneSelection.png" width=auto height=auto></td>
    <td><img src="Screenshots/InfoPage.png" width=auto height=auto></td>
   </tr>
   <tr>
