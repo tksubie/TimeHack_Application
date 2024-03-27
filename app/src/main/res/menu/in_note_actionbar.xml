@@ -5,13 +5,13 @@
 
 
     <!--button for delete -->
-    <item android:title="@string/delete_note"
+    <item
         android:id="@+id/deleteN"
-        />
+        android:title="@string/delete_note" />
 
     <!--button for share -->
-    <item android:title="@string/share_note"
+    <item
         android:id="@+id/shareN"
-        />
+        android:title="@string/share_note" />
 
 </menu>

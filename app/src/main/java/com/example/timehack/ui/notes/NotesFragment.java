@@ -44,12 +44,28 @@ public class NotesFragment extends Fragment {
     SearchView searchNotes;
 
     NotesActivity selectedNote;
+    //intents for the onclick and long click looking for errors
+    private final NotesClickListener notesClickListener = new NotesClickListener() {
+        @SuppressWarnings("deprecation")
+        @Override
+        public void onClick(NotesActivity notes) {
+            Intent intent = new Intent(getContext(), NotesTaker.class);
+            intent.putExtra("old_note", notes);
+            startActivityForResult(intent, 102);
+        }
 
+        @Override
+        public void onLongClick(NotesActivity notes, CardView cardview) {
+            selectedNote = new NotesActivity();
+            selectedNote = notes;
+            showPopup(cardview);
+
+        }
+    };
     View v;
 
-
     public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState){
+                             ViewGroup container, Bundle savedInstanceState) {
 
         //show action bar
         ((AppCompatActivity) getActivity()).getSupportActionBar().show();
@@ -82,14 +98,13 @@ public class NotesFragment extends Fragment {
             @Override
             public boolean onMenuItemSelected(@NonNull MenuItem menuItem) {
 
-                if (menuItem.getItemId() == R.id.addN){
+                if (menuItem.getItemId() == R.id.addN) {
                     Intent intent = new Intent(getContext(), NotesTaker.class);
-                    startActivityForResult (intent, 101);
+                    startActivityForResult(intent, 101);
                     notesAdapter.notifyDataSetChanged();
                     refreshFragment();
                     return true;
-                }
-                else return false;
+                } else return false;
             }
         }, getViewLifecycleOwner(), Lifecycle.State.RESUMED);
 
@@ -117,17 +132,16 @@ public class NotesFragment extends Fragment {
         });
 
 
-
         return v;
     }
 
-//filter the list
+    //filter the list
     private void filter(String newText) {
         List<NotesActivity> filteredList = new ArrayList<>();
-        for(NotesActivity singleNote : notes){
+        for (NotesActivity singleNote : notes) {
             //looking inside the titles for the notes saved and also the body of all the notes
-            if(singleNote.getTitle().toLowerCase().contains(newText.toLowerCase())
-                    || singleNote.getBody().toLowerCase().contains((newText.toLowerCase()))){
+            if (singleNote.getTitle().toLowerCase().contains(newText.toLowerCase())
+                    || singleNote.getBody().toLowerCase().contains((newText.toLowerCase()))) {
                 //create filtered list with results
                 filteredList.add(singleNote);
             }
@@ -143,8 +157,8 @@ public class NotesFragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(requestCode==101){
-            if(resultCode == Activity.RESULT_OK){
+        if (requestCode == 101) {
+            if (resultCode == Activity.RESULT_OK) {
                 NotesActivity new_notes = (NotesActivity) data.getSerializableExtra("note");
                 notesDatabase.notesDataInterface().insert(new_notes);
 
@@ -156,11 +170,10 @@ public class NotesFragment extends Fragment {
                 Toast.makeText(getContext(), "Added note - " + new_notes.getTitle(), Toast.LENGTH_SHORT).show();
 
             }
-        }
-        else if (requestCode == 102){
-            if(resultCode == Activity.RESULT_OK){
+        } else if (requestCode == 102) {
+            if (resultCode == Activity.RESULT_OK) {
                 NotesActivity new_notes = (NotesActivity) data.getSerializableExtra("note");
-                notesDatabase.notesDataInterface().update(new_notes.getID(), new_notes.getTitle(), new_notes.getBody(), new_notes.getDate(),new_notes.getLastModified());
+                notesDatabase.notesDataInterface().update(new_notes.getID(), new_notes.getTitle(), new_notes.getBody(), new_notes.getDate(), new_notes.getLastModified());
 
                 //clear notes list
                 notes.clear();
@@ -174,29 +187,10 @@ public class NotesFragment extends Fragment {
 
     }
 
-    //intents for the onclick and long click looking for errors
-    private final NotesClickListener notesClickListener = new NotesClickListener() {
-        @SuppressWarnings("deprecation")
-        @Override
-        public void onClick(NotesActivity notes) {
-            Intent intent = new Intent(getContext(), NotesTaker.class);
-            intent.putExtra("old_note", notes);
-            startActivityForResult(intent, 102);
-        }
-
-        @Override
-        public void onLongClick(NotesActivity notes, CardView cardview) {
-            selectedNote = new NotesActivity();
-            selectedNote = notes;
-            showPopup(cardview);
-
-        }
-    };
-
     //update the recycler view when it needs to be updated after functions
     public void updateRecycler(List<NotesActivity> notes) {
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(1,LinearLayoutManager.VERTICAL));
+        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(1, LinearLayoutManager.VERTICAL));
         notesAdapter = new NotesAdapter(getContext(), notes, notesClickListener);
         recyclerView.setAdapter(notesAdapter);
     }
@@ -213,15 +207,14 @@ public class NotesFragment extends Fragment {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
 
-                if (item.getItemId() == R.id.deleteN){
+                if (item.getItemId() == R.id.deleteN) {
                     notesDatabase.notesDataInterface().delete(selectedNote);
                     notes.remove(selectedNote);
                     notesAdapter.notifyDataSetChanged();
                     refreshFragment();
                     Toast.makeText(getContext(), "Deleted note - " + selectedNote.getTitle(), Toast.LENGTH_SHORT).show();
                     return true;
-                }
-                else if (item.getItemId() == R.id.shareN){
+                } else if (item.getItemId() == R.id.shareN) {
                     String title = selectedNote.getTitle();
                     String body = selectedNote.getBody();
 
@@ -242,7 +235,7 @@ public class NotesFragment extends Fragment {
     }
 
     //refresh the fragment of the dataset changing so that the view is changed when their is updates.
-    private void refreshFragment(){
+    private void refreshFragment() {
         // This method refreshes the fragment
         NavHostFragment.findNavController(NotesFragment.this)
                 .navigate(R.id.navigation_notes);

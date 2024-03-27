@@ -20,6 +20,9 @@ public class NotesActivity implements Serializable {
     @ColumnInfo(name = "date")
     String date = "";
 
+    @ColumnInfo(name = "creation_date")
+    String creation_date = "";
+
     @ColumnInfo(name = "body")
     String body = "";
 
@@ -27,6 +30,16 @@ public class NotesActivity implements Serializable {
     Date lastModified;
 
     //getter and setters below for all of the table values
+
+
+    public String getCreation_date() {
+        return creation_date;
+    }
+
+    public void setCreation_date(String creation_date) {
+        this.creation_date = creation_date;
+    }
+
     public Date getLastModified() {
         return lastModified;
     }

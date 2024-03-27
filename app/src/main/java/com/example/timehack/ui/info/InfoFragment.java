@@ -31,17 +31,14 @@ import java.io.OutputStream;
 public class InfoFragment extends Fragment {
 
 
-    //initialize the buttons
-    Button pdf_button1, pdf_button2, pdf_button3, clickable;
-
-    //initialize the adapter
-    ArrayAdapter<CharSequence> adapter;
-
-    private FragmentInfoBinding binding;
-
     // Request code for selecting a PDF document.
     private static final int PICK_PDF_FILE = 2;
-    
+    //initialize the buttons
+    Button pdf_button1, pdf_button2, pdf_button3, clickable;
+    //initialize the adapter
+    ArrayAdapter<CharSequence> adapter;
+    private FragmentInfoBinding binding;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
@@ -84,9 +81,9 @@ public class InfoFragment extends Fragment {
         String fileName3 = "TM_11-5820-890-10-6_Timehack.pdf";
 
         //set on click listener for all one by one
-        button(v,pdf_button1, pdf1,fileName1);
-        button(v,pdf_button2, pdf2, fileName2);
-        button(v,pdf_button3, pdf3, fileName3);
+        button(v, pdf_button1, pdf1, fileName1);
+        button(v, pdf_button2, pdf2, fileName2);
+        button(v, pdf_button3, pdf3, fileName3);
 
         clickable.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -138,6 +135,7 @@ public class InfoFragment extends Fragment {
             }
         });
     }
+
     /*
      *Function to Open a pdf file with intent and open pdf file from assets folder with external app
      *
@@ -161,15 +159,16 @@ public class InfoFragment extends Fragment {
             startActivity(intent);
         }
         //if no application found there is an error
-        catch(ActivityNotFoundException e){
+        catch (ActivityNotFoundException e) {
             Toast.makeText(getContext(), "Error opening PDF - Install a PDF Viewer.", Toast.LENGTH_SHORT).show();
         }
     }
+
     /*
-    *Function to get the assets file from the assets directory and copy the file for use
-    *
-    * Variable in is the file name with .pdf or whatever extension needed
-    */
+     *Function to get the assets file from the assets directory and copy the file for use
+     *
+     * Variable in is the file name with .pdf or whatever extension needed
+     */
     private File getAssetsFile(String fName) {
         //create file object from assets folder and if the file exists create a new file and copy
         File file = new File(requireContext().getFilesDir(), fName);
@@ -183,6 +182,7 @@ public class InfoFragment extends Fragment {
         }
         return file;
     }
+
     /*
      *Function copy assets file from the assets directory and copy the file for use
      *
@@ -206,8 +206,7 @@ public class InfoFragment extends Fragment {
             //close streams
             outputStream.close();
             inputStream.close();
-        }
-        catch(IOException e){
+        } catch (IOException e) {
             Toast.makeText(getContext(), "Error - file not copied for use.", Toast.LENGTH_SHORT).show();
         }
     }

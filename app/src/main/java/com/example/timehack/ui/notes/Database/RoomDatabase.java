@@ -9,7 +9,7 @@ import androidx.room.TypeConverters;
 import com.example.timehack.ui.notes.NotesActivity;
 
 //Database version and settings/creation
-@Database(entities = NotesActivity.class, version = 2, exportSchema = false)
+@Database(entities = NotesActivity.class, version = 3, exportSchema = false)
 @TypeConverters({Converters.class})
 public abstract class RoomDatabase extends androidx.room.RoomDatabase {
 
@@ -17,11 +17,11 @@ public abstract class RoomDatabase extends androidx.room.RoomDatabase {
     //Declare database name
     private static String DATABASE_NAME = "TimeHackNotes";
 
-    public synchronized static RoomDatabase getInstance(Context context){
+    public synchronized static RoomDatabase getInstance(Context context) {
         //check if null or not
-        if(roomDatabase == null){
+        if (roomDatabase == null) {
             roomDatabase = Room.databaseBuilder(context.getApplicationContext(),
-                    RoomDatabase.class, DATABASE_NAME)
+                            RoomDatabase.class, DATABASE_NAME)
                     .allowMainThreadQueries()
                     .fallbackToDestructiveMigration()
                     .build();

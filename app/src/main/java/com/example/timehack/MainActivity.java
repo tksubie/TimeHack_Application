@@ -11,7 +11,7 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.timehack.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity {
 
 
     @Override

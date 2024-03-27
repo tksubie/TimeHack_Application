@@ -9,12 +9,14 @@
               <option name="preferredColumnWidths">
                 <map>
                   <entry key="Duration" value="90" />
+                  <entry key="Pixel_2_XL_API_UpsideDownCake" value="120" />
                   <entry key="Pixel_6_Pro_API_UpsideDownCake" value="120" />
                   <entry key="Pixel_XL_API_34" value="120" />
                   <entry key="R5CW20R4AKN" value="120" />
                   <entry key="RFCRC106VDA" value="120" />
                   <entry key="RFCW80FWXCA" value="120" />
                   <entry key="Resizable_Experimental_API_UpsideDownCake" value="120" />
+                  <entry key="Screenshot_phone_Pixel_2XL" value="120" />
                   <entry key="Tests" value="360" />
                   <entry key="samsung" value="120" />
                   <entry key="samsung&#10; SM-F946U" value="120" />

@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        tools:context=".ui.notes.NotesActivity">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.notes.NotesActivity">
 
-        <!-- action button for addNote -->
-        <item
-            android:id="@+id/addN"
-            android:orderInCategory="100"
-            android:title="@string/add_note"
-            android:icon="@drawable/baseline_note_add_white_75"
-            app:showAsAction="always"
-            />
+    <!-- action button for addNote -->
+    <item
+        android:id="@+id/addN"
+        android:icon="@drawable/baseline_note_add_white_75"
+        android:orderInCategory="100"
+        android:title="@string/add_note"
+        app:showAsAction="always" />
 
 </menu>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Linear layout as parent layout-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D8FFFFFF"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    >
+
+    <!-- Text view to give the spinner a title for time zones-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_time_zone"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- for searching the timezones-->
+    <EditText
+        android:id="@+id/tz_searchbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/textbox"
+        android:hint="@string/input_region"
+        android:inputType="text"
+        android:padding="12dp"
+        android:singleLine="true"
+        tools:ignore="Autofill,VisualLintTextFieldSize" />
+
+    <!-- listview for the time zones displayed-->
+    <ListView
+        android:id="@+id/tz_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

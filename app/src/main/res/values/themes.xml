@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.TimeHack" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    <style name="Theme.TimeHack" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/colorGray</item>
         <item name="colorPrimaryVariant">@color/splashBackground</item>
@@ -26,10 +26,12 @@
             @style/spinnerDropDownItemStyle
         </item>
         <!-- Theme for Splash screen -->
-        <item name="android:windowSplashScreenBackground" tools:ignore="NewApi">@color/splashBackground</item>
-        <item name="android:windowSplashScreenAnimatedIcon" tools:ignore="NewApi">@drawable/timehack_logo</item>
+        <item name="android:windowSplashScreenBackground" tools:ignore="NewApi">@color/black</item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:ignore="NewApi">
+            @mipmap/timehacklogo_launcher_round
+        </item>
         <!-- Time for Splash screen -->
-        <item name="android:windowSplashScreenAnimationDuration" tools:ignore="NewApi">2000</item>
+        <item name="android:windowSplashScreenAnimationDuration" tools:ignore="NewApi">20000</item>
         <!-- Always have the logo displayed on splashscreen -->
         <item name="android:windowSplashScreenBehavior" tools:ignore="NewApi">icon_preferred</item>
 
@@ -55,8 +57,12 @@
         <!-- Customize theme here. -->
 
         <!-- Theme for Splash screen -->
-        <item name="android:windowSplashScreenBackground" tools:ignore="NewApi">@color/splashBackground</item>
-        <item name="android:windowSplashScreenAnimatedIcon" tools:ignore="NewApi">@drawable/timehack_logo</item>
+        <item name="android:windowSplashScreenBackground" tools:ignore="NewApi">
+            @color/splashBackground
+        </item>
+        <item name="android:windowSplashScreenAnimatedIcon" tools:ignore="NewApi">
+            @mipmap/timehacklogo_launcher_round
+        </item>
         <!-- Time for Splash screen -->
         <item name="android:windowSplashScreenAnimationDuration" tools:ignore="NewApi">2000</item>
         <!-- Always have the logo displayed on splashscreen -->
@@ -73,7 +79,9 @@
         </item>
 
     </style>
+
     <style name="Theme.TimeHack.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="Theme.TimeHack.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="spinnerItemStyle">

@@ -201,6 +201,21 @@
             app:layout_constraintVertical_bias="1.0"
             tools:ignore="Autofill,LabelFor,MissingConstraints,TextContrastCheck,TouchTargetSizeCheck,VisualLintOverlap,TextSizeCheck" />
 
+        <ImageView
+            android:id="@+id/CurrentT_View"
+            android:layout_width="240dp"
+            android:layout_height="57dp"
+            android:contentDescription="@string/view_for_current_time_date"
+            android:src="@drawable/textbox"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.338"
+            tools:ignore="ImageContrastCheck" />
+
         <TextClock
             android:id="@+id/cdateTime"
             android:layout_width="285dp"
@@ -221,21 +236,6 @@
             app:layout_constraintTop_toTopOf="@+id/CurrentT_View"
             tools:ignore="MissingConstraints,VisualLintOverlap" />
 
-        <ImageView
-            android:id="@+id/CurrentT_View"
-            android:layout_width="240dp"
-            android:layout_height="57dp"
-            android:contentDescription="@string/view_for_current_time_date"
-            android:src="@drawable/textbox"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.338"
-            tools:ignore="ImageContrastCheck" />
-
         <TextView
             android:id="@+id/choose_time"
             android:layout_width="386dp"
@@ -251,7 +251,7 @@
             android:textColor="@color/greyAccent"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/currentT_View2"
+            app:layout_constraintBottom_toTopOf="@+id/timeZone_spinner"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -259,45 +259,29 @@
             app:layout_constraintVertical_bias="1.0"
             tools:ignore="Autofill,LabelFor,MissingConstraints,TextContrastCheck,TouchTargetSizeCheck,VisualLintOverlap,TextSizeCheck" />
 
-        <ImageView
-            android:id="@+id/currentT_View2"
-            android:layout_width="300dp"
-            android:layout_height="57dp"
-            android:contentDescription="@string/view_for_current_time_date"
-            android:src="@drawable/textbox"
-            android:textColor="#000000"
+
+        <TextView
+            android:id="@+id/timeZone_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textbox"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="@string/select_a_time_zone"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/baseline_arrow_drop_down_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.513"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.609"
-            tools:ignore="ImageContrastCheck" />
-
-        <Spinner
-            android:id="@+id/timeZone_spinner"
-            android:layout_width="290dp"
-            android:layout_height="39dp"
-            android:layout_marginBottom="5dp"
-            android:contentDescription="@string/time_zone_selector"
-            android:dropDownWidth="wrap_content"
-            android:entries="@array/Popular_Time_Zones"
-            android:popupBackground="@android:drawable/spinner_background"
-            android:spinnerMode="dropdown"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:theme="@android:style/Theme.DeviceDefault.Light.Panel"
-            app:layout_constraintBottom_toBottomOf="@+id/currentT_View2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/currentT_View2"
-            app:layout_constraintVertical_bias="0.666"
-            tools:ignore="MissingConstraints,SmallSp,TouchTargetSizeCheck" />
-
+            app:layout_constraintVertical_bias="0.593"
+            tools:ignore="TextContrastCheck" />
 
         <ImageView
-            android:id="@+id/currentT_View"
+            android:id="@+id/tzBacker"
             android:layout_width="240dp"
             android:layout_height="57dp"
             android:contentDescription="@string/view_for_current_time_date"
@@ -324,7 +308,7 @@
             android:textColor="@color/greyAccent"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/currentT_View"
+            app:layout_constraintBottom_toTopOf="@+id/tzBacker"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.52"
             app:layout_constraintStart_toStartOf="parent"
@@ -346,10 +330,10 @@
             android:textColor="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/currentT_View"
+            app:layout_constraintBottom_toBottomOf="@+id/tzBacker"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/currentT_View"
+            app:layout_constraintTop_toTopOf="@+id/tzBacker"
 
             tools:ignore="MissingConstraints,VisualLintBounds,VisualLintOverlap" />
 

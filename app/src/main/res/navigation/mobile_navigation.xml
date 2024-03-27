@@ -10,8 +10,8 @@
         android:id="@+id/navigation_clock"
         android:name="com.example.timehack.ui.clock.ClockFragment"
         android:label="@string/title_clock"
-        android:textStyle="bold"
         android:textColor="@color/white"
+        android:textStyle="bold"
         tools:layout="@layout/fragment_clock" />
 
     <!-- Info part of the navigation dashboard -->
@@ -19,8 +19,8 @@
         android:id="@+id/navigation_info"
         android:name="com.example.timehack.ui.info.InfoFragment"
         android:label="@string/title_info"
-        android:textStyle="bold"
         android:textColor="@color/white"
+        android:textStyle="bold"
         tools:layout="@layout/fragment_info" />
 
     <!-- Notes part of the navigation dashboard -->
@@ -28,8 +28,8 @@
         android:id="@+id/navigation_notes"
         android:name="com.example.timehack.ui.notes.NotesFragment"
         android:label="@string/title_notes"
-        android:textStyle="bold"
         android:textColor="@color/white"
+        android:textStyle="bold"
         tools:layout="@layout/fragment_notes" />
     <activity
         android:id="@+id/navigation_notesEditor"

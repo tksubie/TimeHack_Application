@@ -1,13 +1,19 @@
 package com.example.timehack.ui.clock;
 
+import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Spinner;
+import android.widget.EditText;
 import android.widget.TextClock;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,7 +24,6 @@ import androidx.fragment.app.Fragment;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.timehack.R;
-import com.example.timehack.databinding.FragmentClockBinding;
 
 import org.joda.time.DateTime;
 
@@ -28,20 +33,14 @@ import java.util.Locale;
 //Class to take care of the Clock fragment in the application.
 public class ClockFragment extends Fragment {
 
-    //initialize the spinner
-    Spinner spinner;
+    Dialog dialog;
 
-    //initialize the adapter
-    ArrayAdapter<CharSequence> adapter;
-
-    private FragmentClockBinding binding;
+    String tzPosition = null;
     private SwipeRefreshLayout mSwipeRefreshLayout;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-
-        binding = FragmentClockBinding.inflate(inflater, container, false);
 
         //for the clock fragment view when it starts up
         View v = inflater.inflate(R.layout.fragment_clock, container, false);
@@ -50,21 +49,96 @@ public class ClockFragment extends Fragment {
         ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
 
 
-        final TextView textView = binding.textClock;
+        //creating dialog searchable spinner
+        TextView searchTZ = v.findViewById(R.id.timeZone_spinner);
+
+        //set up text clock
+        TextClock tz = (TextClock) v.findViewById(R.id.tz_display);
+
+        //set timezone to previous position of timezone selected & dropdown to previous selected tz
+        tz.setTimeZone(tzPosition);
+        searchTZ.setText(tzPosition);
+
+        searchTZ.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Initialize dialog
+                dialog = new Dialog(getContext());
+
+                // set custom dialog
+                dialog.setContentView(R.layout.searchable_spinner);
+
+                // set custom height and width for the dialog box
+                //80% for width
+                //50% for height
+                int width = (int) (getResources().getDisplayMetrics().widthPixels * 0.80);
+                int height = (int) (getResources().getDisplayMetrics().heightPixels * 0.50);
+                dialog.getWindow().setLayout(width, height);
+
+                // set transparent background for the whole screen behind the dialog box
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+                // show dialog box
+                dialog.show();
+
+                // Initialize and assign variable
+                EditText search_tz = dialog.findViewById(R.id.tz_searchbox);
+                AbsListView listView = dialog.findViewById(R.id.tz_list_view);
+
+                // Initialize array adapter
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Popular_Time_Zones));
+
+                // set adapter for listview
+                listView.setAdapter(adapter);
+
+                //setup the listener for the dialog search box
+                search_tz.addTextChangedListener(new TextWatcher() {
+                    @Override
+                    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                        //nothing is done before the text is changed
+                    }
+
+                    @Override
+                    public void onTextChanged(CharSequence s, int start, int before, int count) {
+                        adapter.getFilter().filter(s.toString());
+                    }
+
+                    @Override
+                    public void afterTextChanged(Editable s) {
+                        //nothing is done after the text is changed
+                    }
+                });
+
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        // set selected item on textView
+                        searchTZ.setText(adapter.getItem(position));
 
 
-        //creating spinner
-        spinner = (Spinner) v.findViewById(R.id.timeZone_spinner);
+                        // Showing selected spinner item
+                        final Toast toast = Toast.makeText(getContext(), "TimeZone: " + adapter.getItem(position), Toast.LENGTH_SHORT);
+                        toast.show();
 
-        // Create an ArrayAdapter using the string array and a default spinner layout.
-        adapter = ArrayAdapter.createFromResource(
-                this.getActivity(),
-                R.array.Popular_Time_Zones,
-                android.R.layout.simple_spinner_item
-        );
+                        Handler handler = new Handler();
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                toast.cancel();
+                            }
+                        }, 750);
 
-        //set the spinner with adapter, spinner, and view
-        spinnerSet(adapter, spinner, v);
+                        //set position
+                        tzPosition = adapter.getItem(position);
+                        //set timezone
+                        tz.setTimeZone(adapter.getItem(position));
+                        // Dismiss dialog
+                        dialog.dismiss();
+                    }
+                });
+            }
+        });
+
 
         //get textview
         TextView julian = v.findViewById(R.id.jdate);
@@ -104,63 +178,11 @@ public class ClockFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null;
     }
 
-
-    /*
-    * create a spinner
-    * Variables in
-    * Char array adapter being adap
-    * Spinner being spin
-    * View for textclock being x
-    */
-    public void spinnerSet(ArrayAdapter<CharSequence> adap, Spinner spin, View x ) {
-        // Specify the layout to use when the list of choices appears.
-        adap.setDropDownViewResource(android.R.layout.select_dialog_singlechoice);
-
-        // Apply the adapter to the spinner.
-        spin.setAdapter(adap);
-
-        //when clicking on an item in the spinner, do something
-        spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            //set up text clock
-            TextClock tz = (TextClock) x.findViewById(R.id.tz_display);
-
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                // An item is selected. You can retrieve the selected item using
-                // parent.getItemAtPosition(pos).
-                // On selecting a spinner item
-
-                String timezone_choice = spin.getSelectedItem().toString();
-
-                // Showing selected spinner item
-                final Toast toast = Toast.makeText(adapterView.getContext(), "TimeZone: " + timezone_choice, Toast.LENGTH_SHORT);
-                toast.show();
-
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        toast.cancel();
-                    }
-                }, 750);
-
-                //set timezone
-                tz.setTimeZone(timezone_choice);
-
-            }
-
-            //when spinner item is not selected
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-            }
-        });
-    }
 
     //Get Julian day for setting text
-    String julian_day(){
+    String julian_day() {
         DateTime dt = new DateTime();
         //get day of year from datetime
         int day = dt.getDayOfYear();
@@ -172,15 +194,14 @@ public class ClockFragment extends Fragment {
 
         //do not want a three char day number just 2 digits last two
         //so when it is day 101 we want 01 as the output
-        if (len >= 3){
+        if (len >= 3) {
             jday = jday.substring(1);
 
             return jday;
-        }
-        else{
+        } else {
             //if it is only 2 digits if we have just 1-9 days we want also a 0 leading
             //format string, local, put in 0 and width of string is 2, number is julianday
-            String formatted = String.format((Locale) null,"%02d", day);
+            String formatted = String.format((Locale) null, "%02d", day);
 
             return formatted;
         }

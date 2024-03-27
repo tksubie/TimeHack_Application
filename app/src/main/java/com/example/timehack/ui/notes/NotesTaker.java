@@ -40,7 +40,7 @@ public class NotesTaker extends AppCompatActivity {
 
 
         notes = new NotesActivity();
-        try{
+        try {
             //find the old previous made note
             notes = (NotesActivity) getIntent().getSerializableExtra("old_note");
             //get values from old note
@@ -48,7 +48,7 @@ public class NotesTaker extends AppCompatActivity {
             editBody.setText(notes.getBody());
 
             alreadyNotes = true;
-        }catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
@@ -60,18 +60,19 @@ public class NotesTaker extends AppCompatActivity {
                 String title = editTitle.getText().toString();
                 String body = editBody.getText().toString();
 
-                if(title.isEmpty()){
+                if (title.isEmpty()) {
                     Toast.makeText(NotesTaker.this, "Enter Title before finishing.", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                if(body.isEmpty()){
+                if (body.isEmpty()) {
                     Toast.makeText(NotesTaker.this, "Enter notes before finishing.", Toast.LENGTH_SHORT).show();
                     return;
                 }
                 @SuppressLint("SimpleDateFormat") SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yy HH:mm");
+                @SuppressLint("SimpleDateFormat") SimpleDateFormat formatter_created = new SimpleDateFormat("MM/dd/yy HH:mm");
                 Date date = new Date();
 
-                if(!alreadyNotes){
+                if (!alreadyNotes) {
                     //initialize notes
                     notes = new NotesActivity();
                 }
@@ -80,8 +81,8 @@ public class NotesTaker extends AppCompatActivity {
                 notes.setTitle(title);
                 notes.setBody(body);
                 notes.setLastModified(date);
-                notes.setDate(formatter.format(date));
-
+                notes.setCreation_date("Created: " + formatter_created.format(date));
+                notes.setDate("Last Modified: " + formatter.format(date));
 
 
                 Intent intent = new Intent();
@@ -116,10 +117,9 @@ public class NotesTaker extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                    finish();
+                finish();
             }
         });
-
 
 
     }

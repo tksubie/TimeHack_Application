@@ -18,7 +18,7 @@ import java.util.List;
 
 //notes adapter that links to the database values and makes it possible to query from the database
 //also extends the recyclerview view-holder so that the notes can be seen in the recyclerview
-public class NotesAdapter extends RecyclerView.Adapter<NotesViewHolder>{
+public class NotesAdapter extends RecyclerView.Adapter<NotesViewHolder> {
 
     Context context;
     List<NotesActivity> list;
@@ -48,6 +48,9 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesViewHolder>{
         holder.notesDate.setText(list.get(position).getDate());
         holder.notesDate.setSelected(true);
 
+        holder.createdDate.setText(list.get(position).getCreation_date());
+        holder.createdDate.setSelected(true);
+
         holder.notes_list_container.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,10 +73,9 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesViewHolder>{
     }
 
 
-
     //for search view
     @SuppressLint("NotifyDataSetChanged")
-    public void filterList(List<NotesActivity> filteredList){
+    public void filterList(List<NotesActivity> filteredList) {
         list = filteredList;
         notifyDataSetChanged();
     }
@@ -84,7 +86,7 @@ class NotesViewHolder extends RecyclerView.ViewHolder {
     //create items from custom list made in layout
     CardView notes_list_container;
     ImageView noteOption;
-    TextView noteTitle, notesBody, notesDate;
+    TextView noteTitle, notesBody, notesDate,createdDate;
 
     public NotesViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -93,5 +95,6 @@ class NotesViewHolder extends RecyclerView.ViewHolder {
         noteTitle = itemView.findViewById(R.id.noteTitle);
         notesBody = itemView.findViewById(R.id.notesBody);
         notesDate = itemView.findViewById(R.id.notesDate);
+        createdDate = itemView.findViewById(R.id.createdDate);
     }
 }
